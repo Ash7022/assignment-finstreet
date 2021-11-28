@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+<div class="box" id="heading">
+    <h1> details </h1>
+  </div>
+
+  
+    
+
+    <form action="/insert" method="post">
+      <div class="mb-3">
+        <label for="name" class="form-label">customer Name:</label>
+        <input type="text" class="form-control" aria-label="First name" name="username">
+       
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label" >Email address:</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" name="Password">
+      </div>
+     
+      <div class="mb-3">
+        <label for="form-text" class="form-label">total orders</label>
+        <input type="text" class="form-control" name="Orders">
+      </div>
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+
+<%- include("footer") -%>

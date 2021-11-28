@@ -1,0 +1,27 @@
+<%- include("header") -%>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+        </tr>
+    </thead>
+    <tbody>
+            <%details.forEach(function(content){ %>
+          <tr>
+            
+            <td><a href="/details/<%=content._id%>"><%=content._id%></a></td>
+            <td><%= content.name %></td>
+          </tr>
+          <%});%>
+        </tbody>
+      </table>
+   
+    
+
+
+
+<%- include("footer"); -%>
